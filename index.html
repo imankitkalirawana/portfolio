@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <meta id="meta-description" name="description"
+        content="The easiest way to stay updated to the latest tech news. Get the best content from the top tech publications on any topic you want." />
+    <meta id="meta-keywords" name="keywords"
+        content="imankitkalirawana, ankit kalirawana, technology, articles, news, threads, blogs, html, css, javascript, php, python, tech, bhuneshvar" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta id="meta-item-name" itemprop="name" content="Ankit Kalirawana" />
+    <meta id="meta-item-description" itemprop="description"
+        content="The easiest way to stay updated to the latest tech news. Get the best content from the top tech publications on any topic you want." />
+    <meta id="meta-item-image" itemprop="image" content="https://imankitkalirawana.online/images/logo_blue.png" />
+
+    <!-- Twitter Card data -->
+    <meta id="twt-card" name="twitter:card" content="summary" />
+    <meta id="twt-site" name="twitter:site" content="@imbhuneshvar" />
+    <meta id="twt-title" name="twitter:title" content="Ankit Kalirawana" />
+    <meta id="twt-description" name="twitter:description"
+        content="The easiest way to stay updated to the latest tech news. Get the best content from the top tech publications on any topic you want." />
+    <meta id="twt-creator" name="twitter:creator" content="@imbhuneshvar" />
+    <meta id="twt-image" name="twitter:image" content="https://imankitkalirawana.online/images/imankitkalirawana.jpg" />
+
+    <!-- Open Graph data -->
+    <meta id="og-title" property="og:title" content="Ankit Kalirawana" />
+    <meta id="og-type" property="og:type" content="website" />
+    <meta id="og-url" property="og:url" content="https://imankitkalirawana.online" />
+    <meta id="og-image" property="og:image" content="https://imankitkalirawana.online/images.imankitkalirawana.jpg" />
+    <meta id="og-description" property="og:description"
+        content="The easiest way to stay updated to the latest tech news. Get the best content from the top tech publications on any topic you want." />
+
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.Fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <img src="/assets/logo.jpg" alt="logo-img" class="logo-img">
+                    <div class="logo-text">Miracle<span class="logo-text-2">Happens</span></div>
+                </div>
+                <div class="nav-menu">
+                    <a href="#" class="nav-item">Homepage</a>
+                    <a href="#" class="nav-item active">CV</a>
+                    <a href="#" class="nav-item">Blogs</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-user">
+                    <img class="nav-avatar" src="/assets/b5.jpg" alt="">
+                    <div class="nav-name">Bhuneshvar</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <aside class="aside-left" id="aside_left">
+            <div class="profile" id="profile">
+                <div class="profile-1">
+                    <div class="profile-owner">
+                        <img src="/assets/b5.jpg" alt="bhuneshvar" class="profile-avatar">
+                        <div class="profile-name">
+                            <div class="profile-details">
+                                <h3>Bhuneshvar</h3>
+                                <div class="profile-job">
+                                    <p>Web Developer</p>
+                                    <p>Machine Learner</p>
+                                </div>
+                            </div>
+                            <div class="profile-social">
+                                <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="profile-2">
+                    <button id="overview_btn" onclick="overview()" class="profile-toggle active"><i
+                            class="fa-regular fa-envelope-open"></i>Overview</button>
+                    <button id="skills_btn" onclick="skills()" class="profile-toggle"><i
+                            class="fa-regular fa-brain-circuit"></i>Skills</button>
+                    <button id="social_btn" onclick="social()" class="profile-toggle"><i
+                            class="fa-regular fa-users"></i>Social</button>
+                    <button id="education_btn" onclick="toggle_education()" class="profile-toggle"><i
+                            class="fa-regular fa-school"></i>Education</button>
+                </div>
+            </div>
+
+            <div class="more-skills" id="more_skills">
+                <div class="more-skills-1">
+                    <div class="more-skills-in">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>
+                        <div class="more-skill">
+                            <div class="more-skill-progress html"></div>
+                        </div>
+                        <h3>90%</h3>
+                    </div>
+                    <div class="more-skills-in">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <div class="more-skill">
+                            <div class="more-skill-progress css"></div>
+                        </div>
+                        <h3>85%</h3>
+                    </div>
+                    <div class="more-skills-in">
+                        <i class="fa-brands fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <div class="more-skill">
+                            <div class="more-skill-progress javascript"></div>
+                        </div>
+                        <h3>75%</h3>
+                    </div>
+                    <div class="more-skills-in">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>ReactJs</h3>
+                        <div class="more-skill">
+                            <div class="more-skill-progress react"></div>
+                        </div>
+                        <h3>50%</h3>
+                    </div>
+                    <div class="more-skills-in">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Python</h3>
+                        <div class="more-skill">
+                            <div class="more-skill-progress python"></div>
+                        </div>
+                        <h3>50%</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-social" id="more_social">
+               <div class="more-social-1">
+                <div class="more-social-card linkedin">
+                    <a href="https://linkedin.com/in/bhuneshvar" class="card-logo"><i class="fa-brands fa-linkedin"></i></a>
+                    <div class="card-content">
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/bhuneshvar">linkedin.com/in/bhuneshvar</a>
+                    </div>
+                </div>
+                
+                <div class="more-social-card github">
+                    <a href="https://github.com/imankitkalirawana" class="card-logo"><i class="fa-brands fa-github"></i></a>
+                    <div class="card-content">
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/imankitkalirawana">github.com/imankitkalirawana</a>
+                    </div>
+                </div>
+
+                <div class="more-social-card twitter">
+                    <a href="https://twitter.com/imbhuneshvar" class="card-logo"><i class="fa-brands fa-twitter"></i></a>
+                    <div class="card-content">
+                        <h3>Twitter</h3>
+                        <a href="https://twitter.com/imbhuneshvar">twitter.com/imbhuneshvar</a>
+                    </div>
+                </div>
+
+                <div class="more-social-card telegram">
+                    <a href="https://telegram.me/imankitkalirawana" class="card-logo"><i class="fa-brands fa-telegram"></i></a>
+                    <div class="card-content">
+                        <h3>Telegram</h3>
+                        <a href="https://telegram.me/imankitkalirawana">telegram.me/imankitkalirawana</a>
+                    </div>
+                </div>
+
+                <div class="more-social-card mail">
+                    <a href="mailto:contact@imankitkalirawana.online" class="card-logo"><i class="fa-regular fa-envelope"></i></a>
+                    <div class="card-content">
+                        <h3>Mail</h3>
+                        <a href="mailto:contact@imankitkalirawana.online">contact@imankitkalirawana.online</a>
+                    </div>
+                </div>
+
+                <div class="more-social-card figma">
+                    <a href="https://figma.com/imankitkalirawana" class="card-logo"><i class="fa-brands fa-figma"></i></a>
+                    <div class="card-content">
+                        <h3>Figma</h3>
+                        <a href="https://figma.com/imankitkalirawana">figma.com/ankitkalirawana</a>
+                    </div>
+                </div>
+
+                <div class="more-social-card dribbble">
+                    <a href="https://dribbble.com/imankitkalirawana" class="card-logo"><i class="fa-brands fa-dribbble"></i></a>
+                    <div class="card-content">
+                        <h3>Dribbble</h3>
+                        <a href="https://dribbble.com/imankitkalirawana">dribbble.com/ankitkalirawana</a>
+                    </div>
+                </div>
+
+               </div>
+            </div>
+
+            <div class="description" id="description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus repellat, quod a ad corporis
+                    fugiat perferendis dolorum quas est, maxime officiis, enim necessitatibus! Doloremque quae non ex
+                    temporibus a! Iste, atque dignissimos. Enim officiis optio laudantium, voluptatum veritatis
+                    doloribus illo debitis voluptatibus libero hic, deleniti cum accusantium labore iure.</p>
+            </div>
+
+            <div class="personal" id="personal">
+                <h3 class="topic-heading">All Personal Informations</h3>
+                <div class="personal-1">
+                    <div class="personal-list">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="personal-details">
+                            <h5>contact@imankitkalirawana.online</h5>
+                            <p>Mail Address</p>
+                        </div>
+                    </div>
+
+                    <div class="personal-list">
+                        <i class="fa-regular fa-mobile"></i>
+                        <div class="personal-details">
+                            <h5>+91 999XXXXX37</h5>
+                            <p>Contact Number</p>
+                        </div>
+                    </div>
+
+                    <div class="personal-list">
+                        <i class="fa-regular fa-cake-candles"></i>
+                        <div class="personal-details">
+                            <h5>26 March 2004</h5>
+                            <p><span id="Date_OB"></span> Years Old</p>
+                        </div>
+                    </div>
+
+                    <div class="personal-list">
+                        <i class="fa-regular fa-square-dollar"></i>
+                        <div class="personal-details">
+                            <h5>$1000</h5>
+                            <p>Salary Expectation</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="personal-2">
+                    <div class="personal-list">
+                        <i class="fa-regular fa-location-dot"></i>
+                        <div class="personal-details">
+                            <h5>New Delhi, Bengaluru, Mumbai, India, US, Europe</h5>
+                            <p>Location</p>
+                        </div>
+                    </div>
+
+                    <div class="personal-list">
+                        <i class="fa-regular fa-computer-mouse-scrollwheel"></i>
+                        <div class="personal-details">
+                            <h5>Internship, Remote, Freelance, Part-Time, Full-Time</h5>
+                            <p>Work Type</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume" id="resume">
+                <h3 class="topic-heading">Resume</h3>
+                <div class="resume-content">
+                    <div class="resume-1">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <h3>bhuneshvar-resume.pdf</h3>
+                    </div>
+                    <div class="resume-2">
+                        <a href="#" class="resume-download">Download<i class="fa-regular fa-arrow-down-to-line"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects" id="projects">
+                <h3 class="topic-heading">Projects</h3>
+                <div class="projects-1">
+                    <div class="project-list">
+                        <img src="/assets/logo.jpg" alt="img" class="project-icon">
+                        <div class="project-details">
+                            <div class="project-heading">
+                                <h3>Blog Website</h3>
+                                <div class="project-language">
+                                    <span class="project-language-name">HTML</span>
+                                    <span class="project-language-name">CSS</span>
+                                    <span class="project-language-name">JavaScript</span>
+                                </div>
+                                <span class="project-date">- March 2022</span>
+                            </div>
+                            <ul class="project-specs">
+                                <li>Used HTML, CSS, and Javascript to
+                                    build a platform to read, write and
+                                    manage articles and blogs.
+                                </li>
+                                <li>A User-Friendly UI with responsive
+                                    media query and proper alignment.</li>
+                                <li>Modern and attractive UI with
+                                    enhanced dark and light mode
+                                    switching.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-list">
+                        <img src="/assets/logo.jpg" alt="img" class="project-icon">
+                        <div class="project-details">
+                            <div class="project-heading">
+                                <h3>Personal Portfolio</h3>
+                                <div class="project-language">
+                                    <span class="project-language-name">HTML</span>
+                                    <span class="project-language-name">CSS</span>
+                                    <span class="project-language-name">JavaScript</span>
+                                </div>
+                                <span class="project-date">- October 2022</span>
+                            </div>
+                            <ul class="project-specs">
+                                <li>Used HTML, CSS, and Javascript to
+                                    build a platform to read, write and
+                                    manage articles and blogs.
+                                </li>
+                                <li>A User-Friendly UI with responsive
+                                    media query and proper alignment.</li>
+                                <li>Modern and attractive UI with
+                                    enhanced dark and light mode
+                                    switching.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education" id="education">
+                <h3 class="topic-heading">Education</h3>
+                <div class="education-1">
+                    <div class="education-card">
+                        <img src="/assets/LPU_logo.png" width="30px" alt="LPU" class="education-logo">
+                        <div class="education-details">
+                            <div class="education-heading">
+                                <h3>Lovely Professional University</h3>
+                                <span class="education-year">2026</span>
+                            </div>
+                            <div class="education-specs">
+                                <div class="education-specs-1">
+                                    <p>Bachelor of Technology in Computer Science and Engineering</p>
+                                </div>
+                                <div class="education-specs-2">
+                                    <p>- Jalandhar, Punjab, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-card">
+                        <img src="/assets/Adarsh_logo.png" width="30px" alt="LPU" class="education-logo">
+                        <div class="education-details">
+                            <div class="education-heading">
+                                <h3>Adarsh Sr. Sec. School</h3>
+                                <span class="education-year">2021</span>
+                            </div>
+                            <div class="education-specs">
+                                <div class="education-specs-1">
+                                    <p>XII<sup>th</sup> in Non-Medical (CBSE)</p>
+                                </div>
+                                <div class="education-specs-2">
+                                    <p>- Jhajjar, Haryana, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-card">
+                        <img src="/assets/Adarsh_logo.png" width="30px" alt="LPU" class="education-logo">
+                        <div class="education-details">
+                            <div class="education-heading">
+                                <h3>Adarsh Sr. Sec. School</h3>
+                                <span class="education-year">2019</span>
+                            </div>
+                            <div class="education-specs">
+                                <div class="education-specs-1">
+                                    <p>X<sup>th</sup> (CBSE)</p>
+                                </div>
+                                <div class="education-specs-2">
+                                    <p>- Jhajjar, Haryana, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <aside class="aside-right">
+            <div class="skills" id="skills">
+                <h3 class="topic-heading">Skills</h3>
+                <div class="skills-1">
+                    <span class="skill">HTML <i class="fa-solid fa-circle-check"></i></span>
+                    <span class="skill">CSS <i class="fa-solid fa-circle-check"></i></span>
+                    <span class="skill">JavaScript <i class="fa-solid fa-circle-check"></i></span>
+                    <span class="skill">React <i class="fa-sharp fa-solid fa-circle-up"></i></span>
+                    <span class="skill">Python <i class="fa-sharp fa-solid fa-circle-up"></i></span>
+                </div>
+            </div>
+
+            <div class="languages" id="languages">
+                <h3 class="topic-heading">Languages</h3>
+                <div class="languages-1">
+
+                    <div class="language">
+                        <div class="language-1">
+                            <span>Hr</span>
+                        </div>
+                        <div class="language-2">
+                            <h5>Haryanvi</h5>
+                            <p>Native</p>
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <div class="language-1">
+                            <span>Hi</span>
+                        </div>
+                        <div class="language-2">
+                            <h5>Hindi</h5>
+                            <p>Near-Native</p>
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <div class="language-1">
+                            <span>En</span>
+                        </div>
+                        <div class="language-2">
+                            <h5>English</h5>
+                            <p>Advanced</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+    </main>
+
+
+    <script>
+
+        // Date of Birth calculator
+
+        var dob = new Date("03/26/2004")
+        var mon_diff = Date.now() - dob.getTime();
+        var age_dt = new Date(mon_diff)
+        var year = age_dt.getUTCFullYear();
+        var age = Math.abs(year - 1970)
+        document.getElementById("Date_OB").innerHTML = age
+
+
+        // Profile Switcher
+
+        const aside_left = document.getElementById("aside_left")
+        const profile = document.getElementById("profile")
+        const more_skills = document.getElementById("more_skills")
+        const more_social = document.getElementById("more_social")
+        const description = document.getElementById("description")
+        const personal = document.getElementById("personal")
+        const resume = document.getElementById("resume")
+        const projects = document.getElementById("projects")
+        const education = document.getElementById("education")
+        const overview_btn = document.getElementById("overview_btn")
+        const skills_btn = document.getElementById("skills_btn")
+        const social_btn = document.getElementById("social_btn")
+        const education_btn = document.getElementById("education_btn")
+
+        function overview() {
+            description.style.display = "initial"
+            personal.style.display = "initial"
+            resume.style.display = "initial"
+            projects.style.display = "initial"
+            education.style.display = "initial"
+            more_skills.style.display = "none"
+            more_social.style.display = "none"
+            overview_btn.classList.add("active")
+            skills_btn.classList.remove("active")
+            social_btn.classList.remove("active")
+            education_btn.classList.remove("active")
+        }
+
+        function skills() {
+            description.style.display = "none"
+            personal.style.display = "none"
+            resume.style.display = "none"
+            projects.style.display = "none"
+            education.style.display = "none"
+            more_skills.style.display = "inherit"
+            more_social.style.display = "none"
+            skills_btn.classList.add("active")
+            overview_btn.classList.remove("active")
+            social_btn.classList.remove("active")
+            education_btn.classList.remove("active")
+        }
+
+        function social() {
+            description.style.display = "none"
+            personal.style.display = "none"
+            resume.style.display = "none"
+            projects.style.display = "none"
+            education.style.display = "none"
+            more_skills.style.display = "none"
+            more_social.style.display = "inherit"
+            social_btn.classList.add("active")
+            overview_btn.classList.remove("active")
+            skills_btn.classList.remove("active")
+            education_btn.classList.remove("active")
+        }
+
+        function toggle_education() {
+            description.style.display = "none"
+            personal.style.display = "none"
+            resume.style.display = "none"
+            projects.style.display = "none"
+            education.style.display = "none"
+            more_skills.style.display = "none"
+            education_btn.classList.add("active")
+            overview_btn.classList.remove("active")
+            skills_btn.classList.remove("active")
+            social_btn.classList.remove("active")
+        }
+
+
+    </script>
+</body>
+
+</html>
